@@ -1,0 +1,317 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(49, 200, 23);
+    padding-top: 78px; /*Add padding to avoid content hiding under navbar */
+   overflow-x: hidden;
+}
+
+.navbar {
+    background-color: rgb(9, 255, 0);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+    border-bottom: 2px solid white; /* Adjust thickness and color as needed */
+}
+
+.navbar-brand .logo {
+    max-height: 100px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 2rem;
+    margin-right: 2dvw;
+}
+
+.navbar-nav .social-icon {
+    max-height: 40px;
+    width: auto;
+}
+.social-icon{
+    margin-right: -2dvw;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-link {
+        font-size: 0.875rem;
+        margin-right: 10px;
+    }
+
+    .navbar-brand .logo {
+        max-height: 50px;
+    }
+
+    .navbar-nav .social-icon {
+        max-height: 15px;
+    }
+} 
+
+.navbar-brand .logo {
+    max-height: 100px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 2rem;
+    margin-right: 2dvw;
+}
+
+.navbar-nav .social-icon {
+    max-height: 40px;
+    width: auto;
+}
+.social-icon{
+    margin-right: -2dvw;
+}
+
+
+@media (max-width: 780px) {
+    .navbar-nav .nav-link {
+        font-size: 0.875rem;
+        margin-right: 10px;
+    }
+
+    .navbar-brand .logo {
+        max-height: 50px;
+    }
+
+    .navbar-nav .social-icon {
+        max-height: 15px;
+    }
+}
+
+.sec-2 img {
+    
+    width: 100vw;
+    height: auto; /* Adjust height to auto to maintain aspect ratio */
+}
+
+.sec-2-left {
+    position: absolute;
+    bottom: 38%;
+    left: 9%;
+    font-family: 'Nunito', sans-serif; /* Custom font-family */
+    font-size: 4.5vw; /* Custom font-size */
+    line-height: 1em; /* Custom line-height */
+    margin-bottom: 32px;
+    font-weight: 900; /* Custom font-weight */
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff; /* Custom text-shadow */
+}
+
+.custom-button {
+    position: absolute;
+    bottom: 35%;
+    left: 9%;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+}
+
+@media (max-width: 1375px) {
+    .sec-2 {
+        position: relative;
+        text-align: center; /* Center-align the text and button */
+    }
+
+    .sec-2 img {
+        content: url('images/new.png'); /* Change the image source */
+        height: 40%; /* Ensure the image height adjusts */
+    }
+
+    .sec-2-left, .custom-button {
+        position: static; /* Remove absolute positioning */
+        margin: 10px auto; /* Center-align and add spacing */
+        display: block; /* Ensure elements stack vertically */
+    }
+
+    .sec-2-left {
+        margin-top: 45px;
+        font-size: 9vw; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .custom-button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 5px 10px; /* Adjust button padding */
+        margin-bottom: 20px;
+    }
+}
+.img1 {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.sec-3, .sec-4 {
+    background: transparent;
+    position: relative;
+    
+    height: auto;
+}
+
+.sec-3-center, .sec-4-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    width: 100vw; /* Ensure full width for centering */
+    padding: 20px; /* Adjust padding */
+    box-sizing: border-box;
+    text-align: center; /* Center content */
+}
+
+.oval {
+    width: 100%;
+    max-width: 600px; /* Decreased maximum width */
+    height: auto;
+    max-height: 200px; /* Decreased maximum height */
+    border-radius: 100px;
+    margin: auto;
+    background: hsla(126, 79%, 17%, 0.70);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Center content */
+}
+
+.oval img {
+    width: 90%; /* Increase the width of the image inside the oval */
+    height: auto;
+    margin-bottom: 1rem; /* Adjust margin */
+}
+
+.oval h2 {
+    font-size: 2rem; /* Adjust font size */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.oval p {
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 1rem; /* Adjust margin */
+}
+
+.oval .btn-light {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px; /* Ensure the button is pill-shaped */
+    padding: 10px 20px; /* Add padding */
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #ffff;
+    cursor: pointer;
+    margin: 0; /* Ensure no extra margin */
+}
+
+@media (max-width: 767px) {
+    .sec-3-center, .sec-4-center {
+        font-size: 8px;
+        padding: 10px; /* Adjust padding */
+    }
+
+    .oval {
+        width: 90%;
+        max-width: 300px; /* Decreased maximum width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .oval img {
+        width: 100%; /* Increase image width on smaller screens */
+        height: auto;
+    }
+
+    .oval h2 {
+        font-size: 1rem;
+    }
+
+    .oval p {
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem; /* Adjust margin for better spacing */
+    }
+
+    .oval .btn-light {
+        font-size: 0.5rem; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+.footer-links-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px; /* Gap between the columns */
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+}
+
+.footer-links a {
+    margin: 5px 0; /* Adjust margin between links */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; /* Base font size for links */
+    word-wrap: break-word; /* Ensure long links break to a new line */
+}
+
+/* Responsive font sizes for links and paragraph */
+@media (max-width: 768px) {
+    .footer-links-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-rows: repeat(4, auto); /* Adjust rows for the number of links */
+    }
+
+    .footer-links.left,
+    .footer-links.right {
+        width: 100%; /* Make sections take full width */
+    }
+
+    .footer-links.left {
+        grid-column: 1 / 2; /* Ensure it takes the first column */
+    }
+
+    .footer-links.right {
+        grid-column: 2 / 3; /* Ensure it takes the second column */
+    }
+
+    .footer-links a {
+        font-size: 0.7rem; /* Smaller font size on smaller screens */
+    }
+
+    p {
+        font-size: 0.7rem; /* Smaller font size for paragraph on smaller screens */
+    }
+}
+
+/* Ensure font sizes are appropriate on larger screens */
+@media (min-width: 769px) {
+    .footer-links-container {
+        display: flex;
+        /* justify-content: space-between; */
+         /* Distribute space between left and right sections */
+         margin-left: 12.5vw;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row; /* Arrange links in a row */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+    .footer-links a {
+        font-size: 0.9rem; /* Base font size for links on larger screens */
+        padding-left: 1.042vw;
+    }
+
+    p {
+        font-size: 0.75rem; /* Adjust paragraph font size for larger screens */
+    }
+}
